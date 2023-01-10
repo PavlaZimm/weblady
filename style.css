@@ -44,4 +44,28 @@ nav{
     text-transform: capitalize;
     color: #98aab9;
     font-weight: 500;
+    transition: .5s;
     }
+
+.menu li a:hover{
+    color: #fc604d;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fc604d;
+    left: 0;
+    bottom: -4px;
+    transition: ease .42s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+span{
+    color: #fc604d;
+}
